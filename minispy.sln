@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 12.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Filter", "Filter", "{FE789860-CDFE-48E5-AE02-E418DD3A0C6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{94944192-75BD-4A9E-B4DB-811E26C3A6E5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "minispy", "filter\minispy.vcxproj", "{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "minispy", "user\minispy.vcxproj", "{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Debug|Win32.Build.0 = Debug|Win32
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Debug|x64.ActiveCfg = Debug|x64
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Debug|x64.Build.0 = Debug|x64
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Release|Win32.ActiveCfg = Release|Win32
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Release|Win32.Build.0 = Release|Win32
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Release|x64.ActiveCfg = Release|x64
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1}.Release|x64.Build.0 = Release|x64
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Debug|Win32.Build.0 = Debug|Win32
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Debug|x64.ActiveCfg = Debug|x64
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Debug|x64.Build.0 = Debug|x64
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Release|Win32.ActiveCfg = Release|Win32
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Release|Win32.Build.0 = Release|Win32
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Release|x64.ActiveCfg = Release|x64
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB0153F1-D5E4-45E0-9308-5EF32974E9A1} = {FE789860-CDFE-48E5-AE02-E418DD3A0C6D}
+		{DD45D2A9-C50A-4900-8F7C-991B2ADB061B} = {94944192-75BD-4A9E-B4DB-811E26C3A6E5}
+	EndGlobalSection
+EndGlobal
