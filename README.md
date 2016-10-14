@@ -23,7 +23,7 @@
 	* Navigate to Build -> Configuration Manager
 	* Change the platform from "Win32" to "x64" for both projects
 	* Browse to Build -> Build Solution
-	* **When you get errors please open a ticket** ... Compiling and building drivers is definitely not a straightforward process. 
+	* **When you get errors please open a ticket** ... Compiling and building drivers is definitely not a straightforward process.
 * Disable [Windows Signed Driver Enforcement](https://msdn.microsoft.com/en-us/windows/hardware/drivers/install/kernel-mode-code-signing-policy--windows-vista-and-later-):
 	* [Windows 7/8/Vista](https://www.raymond.cc/blog/loading-unsigned-drivers-in-windows-7-and-vista-64-bit-x64/)
 	* [Windows 10](http://windowsreport.com/driver-signature-enforcement-windows-10/)
@@ -37,7 +37,7 @@
 	* Finally... We can run the executable!
 
 ## Usage
-When you've successfully built the project, you can run the executable directly with an Administrative PowerShell - `.\decryptonite.exe`
+The first step is to open up an Administrative PowerShell and run Decryptonite. - `.\decryptonite.exe`
 ![](http://imgur.com/a2wbXrX.png)
 
 That's all the setup required! Decryptonite will automatically detect and attach to the "C:\\" drive. If you decide to run either ransomware or executables with valid digital signatures, the output will resemble the following:
