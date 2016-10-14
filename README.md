@@ -37,7 +37,7 @@
 	* Finally... We can run the executable!
 
 ## Usage
-When you've successfully built the project, you can run the executable directly with PowerShell - `.\decryptonite.exe`
+When you've successfully built the project, you can run the executable directly with an Administrative PowerShell - `.\decryptonite.exe`
 ![](http://imgur.com/a2wbXrX.png)
 
 That's all the setup required! Decryptonite will automatically detect and attach to the "C:\\" drive. If you decide to run either ransomware or executables with valid digital signatures, the output will resemble the following:
