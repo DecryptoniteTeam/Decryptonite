@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mspyUser.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mspyLog.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="array.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dctLog.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dctUser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -31,7 +31,10 @@
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd">
+    <ClInclude Include="dctLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="array.h">
@@ -49,11 +52,16 @@
     </ClInclude>
     <ClInclude Include="mspyLog.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="mspyLog.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="mspyLog.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="dctLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\Decryptonite.ico">

@@ -7,7 +7,7 @@ Sheridan College | ISS Captone Project
 
 Module Name:
 
-mspyLog.c
+dctLog.c
 
 Abstract:
 
@@ -19,10 +19,6 @@ Altered By:
 
 Adam Greenhill, Christina Kang, Desiree McCarthy, Peter Chmura
 
-Environment: Windows 7 x64
-
-User mode
-
 --*/
 
 #include <DriverSpecs.h>
@@ -33,7 +29,7 @@ _Analysis_mode_(_Analysis_code_type_user_code_)
 #include <stdlib.h>
 #include <winioctl.h>
 #include <wchar.h>
-#include "mspyLog.h"
+#include "dctLog.h"
 #include "uthash.h"
 #include <ctype.h>
 #include <string.h>

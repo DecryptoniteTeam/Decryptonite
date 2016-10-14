@@ -4,7 +4,7 @@ Copyright (c) 1989-2002  Microsoft Corporation
 
 Module Name:
 
-mspyUser.c
+dctUser.c
 
 Abstract:
 
@@ -12,10 +12,6 @@ This file contains the implementation for the main function of the
 user application piece of MiniSpy.  This function is responsible for
 controlling the command mode available to the user to control the
 kernel mode driver.
-
-Environment:
-
-User mode
 
 --*/
 
@@ -26,7 +22,7 @@ _Analysis_mode_(_Analysis_code_type_user_code_)
 #include <stdio.h>
 #include <windows.h>
 #include <assert.h>
-#include "mspyLog.h"
+#include "dctLog.h"
 #include <strsafe.h>
 #include "uthash.h"
 #include <tchar.h>
@@ -53,7 +49,7 @@ _Analysis_mode_(_Analysis_code_type_user_code_)
 #define CMDLINE_SIZE              256
 #define NUM_PARAMS                40
 
-#define MINISPY_NAME            L"MiniSpy"
+#define DECRYPTONITE_NAME            L"Decryptonite"
 
 WCHAR * Volume;
 int IsPassive = 0;
@@ -375,7 +371,7 @@ main(
 
 Routine Description:
 
-Main routine for minispy
+Main routine for Decryptonite
 
 Arguments:
 
@@ -435,7 +431,7 @@ Return Value:
 	//
 	EnablePrivileges();
 	printf("Attempting to load minifilter driver...\n");
-	hResult = FilterLoad(L"minispy");
+	hResult = FilterLoad(L"decryptonite");
 	if (HRESULT_FROM_WIN32(ERROR_ALREADY_EXISTS) == hResult)
 	{
 		printf("The minifilter driver is already running...\n");
@@ -888,7 +884,7 @@ Return Value:
 					goto InterpretCommand_Usage;
 				}
 
-				hResult = FilterAttach(MINISPY_NAME,
+				hResult = FilterAttach(DECRYPTONITE_NAME,
 					(PWSTR)buffer,
 					NULL, // instance name
 					sizeof(instanceName),
@@ -998,7 +994,7 @@ Return Value:
 				//  Detach from the volume and instance specified.
 				//
 
-				hResult = FilterDetach(MINISPY_NAME,
+				hResult = FilterDetach(DECRYPTONITE_NAME,
 					(PWSTR)buffer,
 					instanceString);
 
@@ -1239,7 +1235,7 @@ FALSE - we are not attached (or we couldn't tell)
 		//  Bump the instance count when we find a match
 		//
 
-		if (_wcsicmp(filtername, MINISPY_NAME) == 0) {
+		if (_wcsicmp(filtername, DECRYPTONITE_NAME) == 0) {
 
 			instanceCount++;
 		}

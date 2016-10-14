@@ -38,7 +38,7 @@
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetVersion>Windows10</TargetVersion>
+    <TargetVersion>Windows7</TargetVersion>
     <UseDebugLibraries>True</UseDebugLibraries>
     <DriverTargetPlatform>Desktop</DriverTargetPlatform>
     <DriverType />
@@ -84,7 +84,7 @@
     <TargetName>Decryptonite</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <TargetName>minispy</TargetName>
+    <TargetName>decryptonite</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <TargetName>minispy</TargetName>
@@ -119,7 +119,7 @@
       <TreatWarningAsError>false</TreatWarningAsError>
       <WarningLevel>Level4</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);UNICODE;_UNICODE</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(IFSKIT_INC_PATH);$(DDK_INC_PATH);..\inc;..\uthash-master\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(IFSKIT_INC_PATH);$(DDK_INC_PATH);..\inc;..\libs</AdditionalIncludeDirectories>
       <ExceptionHandling>
       </ExceptionHandling>
     </ClCompile>
@@ -179,8 +179,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="array.c" />
-    <ClCompile Include="mspyLog.c" />
-    <ClCompile Include="mspyUser.c" />
+    <ClCompile Include="dctLog.c" />
+    <ClCompile Include="dctUser.c" />
     <ResourceCompile Include="mspyUser.rc" />
   </ItemGroup>
   <ItemGroup>
@@ -192,7 +192,7 @@
     <None Exclude="@(None)" Include="*.def;*.bat;*.hpj;*.asmx" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Exclude="@(ClInclude)" Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd" />
+    <ClInclude Exclude="@(ClInclude)" Include="dctLog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>

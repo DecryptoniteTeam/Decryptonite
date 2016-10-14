@@ -1,5 +1,5 @@
 ;;;
-;;; Minispy
+;;; Decryptonite
 ;;;
 ;;;
 ;;; Copyright (c) 2001, Microsoft Corporation
@@ -80,8 +80,8 @@ HKR,"Instances\"%Instance3.Name%,"Flags",0x00010001,%Instance3.Flags%
 %UserAppName%.exe
 
 [SourceDisksFiles]
-minispy.sys = 1,,
-minispy.exe = 1,,
+decryptonite.sys = 1,,
+decryptonite.exe = 1,,
 
 [SourceDisksNames]
 1 = %DiskId1%,,,
@@ -92,20 +92,20 @@ minispy.exe = 1,,
 
 [Strings]
 ProviderString          = "TODO-Set-Provider"
-ServiceDescription      = "Minispy mini-filter driver"
-ServiceName             = "Minispy"
-DriverName              = "minispy"
-UserAppName             = "minispy"
-DiskId1                 = "Minispy Device Installation Disk"
+ServiceDescription      = "Decryptonite mini-filter driver"
+ServiceName             = "Decryptonite"
+DriverName              = "decryptonite"
+UserAppName             = "decryptonite"
+DiskId1                 = "Decryptonite Device Installation Disk"
 
 ;Instances specific information.
-DefaultInstance         = "Minispy - Top Instance"
-Instance1.Name          = "Minispy - Middle Instance"
+DefaultInstance         = "Decryptonite - Top Instance"
+Instance1.Name          = "Decryptonite - Middle Instance"
 Instance1.Altitude      = "370000"
 Instance1.Flags         = 0x1          ; Suppress automatic attachments
-Instance2.Name          = "Minispy - Bottom Instance"
+Instance2.Name          = "Decryptonite - Bottom Instance"
 Instance2.Altitude      = "361000"
 Instance2.Flags         = 0x1          ; Suppress automatic attachments
-Instance3.Name          = "Minispy - Top Instance"
+Instance3.Name          = "Decryptonite - Top Instance"
 Instance3.Altitude      = "385100"
 Instance3.Flags         = 0x1          ; Suppress automatic attachments

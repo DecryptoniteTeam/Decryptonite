@@ -322,7 +322,6 @@ SpyFreeBuffer (
 //---------------------------------------------------------------------------
 //  Logging routines
 //---------------------------------------------------------------------------
-int relevantPath(WCHAR *loggedDir); // [PETER]
 
 PRECORD_LIST
 SpyNewRecord (
